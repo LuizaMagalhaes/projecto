@@ -1,0 +1,50 @@
+CREATE DATABASE Tenisland;
+
+USE Tenisland;
+
+CREATE TABLE Cliente(
+	id INT NOT NULL AUTO_INCREMENT,
+    cpf VARCHAR(11) NOT NULL,
+    rg VARCHAR(9) NOT NULL,
+    nome VARCHAR(50) NOT NULL,
+    telefone INT NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE Vendas(
+	dataVenda DATE NOT NULL,
+    quantidade INT NOT NULL
+);
+
+CREATE TABLE Vendedor(
+	id INT NOT NULL AUTO_INCREMENT,
+    cpf VARCHAR(11) NOT NULL,
+    rg VARCHAR(9) NOT NULL,
+    nome VARCHAR(50) NOT NULL,
+    telefone INT NOT NULL,
+    produtosVendidos INT NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE Endereço(
+	rua VARCHAR(20) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
+    numero INT NOT NULL,
+    uf VARCHAR(2) NOT NULL,
+    pais VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE Marca(
+	idMarca INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    modelo VARCHAR(20) NOT NULL,
+    nome VARCHAR(20)
+);
+
+CREATE TABLE Produto(
+	idProduto INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(15) NOT NULL,
+    preco DOUBLE NOT NULL,
+    quantidade INT NOT NULL,
+    descricao VARCHAR(100),
+	tamanho INT NOT NULL
+)
