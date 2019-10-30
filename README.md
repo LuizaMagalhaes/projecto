@@ -1,6 +1,10 @@
-# Tenis Land
-Sistemas para comércio - Projeto integrado USJT - 2019
-4 Semestre - CCP - SI
+# sc_pi
+Sistemas para comércio - PI
 
-Projeto de um sistema para uma loja de tenis.
+## Data Base
+Crie as tabelas do banco seguindo o arquivo `projeto.sql`
+
+## Tomcat
+Utilize o `tom cat 9` disponivel na raiz do projeto
+
 
