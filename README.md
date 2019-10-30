@@ -1,5 +1,8 @@
 # sc_pi
-Sistemas para comércio - PI
+Sistemas para comércio - PI - 4 semestre
+Universidade São Judas Tadeu - Butantã
+
+
 
 ## Data Base
 Crie as tabelas do banco seguindo o arquivo `projeto.sql`
