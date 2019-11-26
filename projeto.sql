@@ -36,7 +36,6 @@ CREATE TABLE IF NOT EXISTS Projeto.compra_itens (
    quantidade INT NOT NULL,
    preco DOUBLE NOT NULL,
    PRIMARY KEY (compra_id, tenis_id),
-   CONSTRAINT fk_compra_itens_compra1
    FOREIGN KEY (compra_id)
    REFERENCES Projeto.compra (id)
    ON DELETE NO ACTION
