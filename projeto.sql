@@ -26,7 +26,6 @@ create table tenis(
 CREATE TABLE IF NOT EXISTS Projeto.compra (
    id INT NOT NULL AUTO_INCREMENT,
    pessoa_id INT NOT NULL,
-   data DATE NOT NULL,
    total DOUBLE NOT NULL,
    PRIMARY KEY (id));
    
